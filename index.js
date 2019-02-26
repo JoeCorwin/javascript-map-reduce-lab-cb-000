@@ -9030,7 +9030,7 @@ const openIssues = issues.reduce((openIssues, issue) => {
     }
 
      return totalIssues;
-  });
+  }, []);
 
    const $tbody = document.getElementById('results');
   $tbody.innerHTML = nonAutomaticIssues
